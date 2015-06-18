@@ -1,0 +1,15 @@
+.divStyle {
+  margin-right: 10px;
+  display: table-cell;
+  border: solid 1px black;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.styleClass{
+  display: table-cell;
+  border: solid 1px black;
+  text-align: center;
+  padding: 20px;
+}

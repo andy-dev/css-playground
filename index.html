@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Event Bubbling</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+  <div id = "div1" class = "divStyle"> DIV 1
+    <div id = "div2" class = "divStyle"> DIV 2
+      <div id = "div3" class = "divStyle"> DIV 3
+      </div>
+    </div>
+  </div>
+
+  <div onclick = "alert('DIV Clicked')" class = "styleClass">Div Element
+    <span onclick = "alert('Span Clicked')" class = "styleClass">Span Element
+      <input type = "button" value = "click ME!" onclick = "alert('button Clicked')" class = "styleClass" />
+    </span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
