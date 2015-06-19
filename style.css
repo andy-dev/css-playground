@@ -13,3 +13,17 @@
   text-align: center;
   padding: 20px;
 }
+
+#one {
+  float:left;
+  clear:left;
+  margin-top: 10px;
+}
+
+#render_one{
+  float:left;
+  clear:left;
+  margin-top: 10px;
+  border: solid 1px black;
+}
+

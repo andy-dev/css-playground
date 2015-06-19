@@ -5,19 +5,42 @@
 </head>
 <body>
 
-  <div id = "div1" class = "divStyle"> DIV 1
+ <!--  <div id = "div1" class = "divStyle"> DIV 1
     <div id = "div2" class = "divStyle"> DIV 2
       <div id = "div3" class = "divStyle"> DIV 3
       </div>
     </div>
   </div>
 
-  <div onclick = "alert('DIV Clicked')" class = "styleClass">Div Element
+  <div onclick = "alert('DIV Clicked')" class = "styleClass" id = "one">Div Element
     <span onclick = "alert('Span Clicked')" class = "styleClass">Span Element
       <input type = "button" value = "click ME!" onclick = "alert('button Clicked')" class = "styleClass" />
     </span>
+  </div> -->
+
+  <div id ="render_one">
+    first render here
   </div>
 
+
+
+<script id="new_template" type="text/x-handlebars-template">
+
+  <div>
+    <h1>{{title}}</h1>
+    <h2>{{body}}</h2>
+  </div>
+
+</script>
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.2/handlebars.min.js"></script>
   <script src="app.js"></script>
+
 </body>
 </html>
