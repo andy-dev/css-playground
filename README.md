@@ -1,2 +1,2 @@
 # css-playground
-my css ninja practice
+my css and JS ninja practice/playground
