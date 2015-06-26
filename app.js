@@ -63,7 +63,7 @@ var handleTest = function (){
 
   var context = {
     title: "this is our title from far away",
-    body: "this is our sexy body"
+    body: "this is our body"
   }
 
   var el_html = template(context);
