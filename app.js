@@ -97,3 +97,15 @@ var myModule = function () {
 // one outer wrapping function
 // two functions have to be return that have a closure over private scope
 // access the internal state and that is called a module
+
+//---------------------------
+//  Simple unit test
+//---------------------------
+var Bob = require('./bob.js');
+describe("Bob", function() {
+  var bob = new Bob();
+  it("stating something", function() {
+    var result = bob.hey('Tom-ay-to, tom-aaaah-to.');
+    expect(result).toEqual('Whatever.');
+  });
+});
