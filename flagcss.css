@@ -67,3 +67,42 @@ body {
   top: 600px;
   left: 0;
 }
+
+#easel h1 a {
+  position:absolute;
+  width:440px;
+  height: 350px;
+  background: #002868;
+  text-indent: -9999em; /*hidden header text*/
+  margin: 0;
+  padding: 0;
+  z-index: 20;
+}
+
+h1 a {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, rgb(0,40,104)),
+    color-stop(0.5, rgb(3, 27, 64))
+  );
+  background-image: -moz-linear-gradient(
+    center bottom,
+    rgb(0,40,104) 0%,
+    rgb(3,27,64) 50%
+    );
+}
+
+/*absolute postioning the element wo offset places upper left hand of our easel aka our containg element*/
+
+#easel ol li a[href="http://www.alabama.gov/"] i {
+ background-image: url(http://www.united-states-flag.com/media/catalog/product/cache/2/thumbnail/9df78eab33525d08d6e5fb8d27136e95/k/l/klcraf_-08_star_us-flag-pole-kit-with-two-way-bracket.jpg);
+ display: block;
+ position: absolute;
+ top: 13px;
+ left: 13px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
