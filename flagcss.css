@@ -1,0 +1,22 @@
+body {
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+#easel {
+  width: 955px;
+  margin: 0 auto; /* set margin to auto to center canvas, the browser splits margin half assigns values to left and right*/
+  position: relative;
+}
+
+/*we get rid of bullets and default margins and padding */
+#easel ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* we hide all text within strong tag */
+#easel strong{
+  display: none;
+}
