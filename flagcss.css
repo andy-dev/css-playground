@@ -20,3 +20,15 @@ body {
 #easel strong{
   display: none;
 }
+
+#easel em{
+  width: 955px;
+  height: 50px;
+  display: block;
+  background: #BF0A30;
+  position: absolute; /*offsetting against the edges of parent element */
+  top: 0; /*zero pixels from top and left of containing element*/
+  left: 0;
+  z-index: 1; /*placing the stacking order, the higher its z index the higher its stacking order*/
+}
+
