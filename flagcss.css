@@ -32,3 +32,38 @@ body {
   z-index: 1; /*placing the stacking order, the higher its z index the higher its stacking order*/
 }
 
+#easel a[href="http://delaware.gov/"] em {
+  background: white;
+  top: 50px;
+  left: 0;
+}
+
+#easel a[href="http://www.georgia.gov/00/home/0"] em {
+  top: 100px;
+  left: 0;
+}
+
+#easel a[href="http://www.maryland.gov"] em {
+  top: 200px;
+  left: 0;
+}
+
+#easel a[href="http://www.state.nj.us/"] em {
+  top: 300px;
+  left: 0;
+}
+
+#easel a[href="http://www.nc.gov/"] em {
+  top: 400px;
+  left: 0;
+}
+
+#easel a[href="http://www.ri.gov/index.php"] em {
+  top: 500px;
+  left: 0;
+}
+
+#easel a[href="http://www.wv.gov/"] em {
+  top: 600px;
+  left: 0;
+}
