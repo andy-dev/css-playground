@@ -165,3 +165,234 @@ h1 a {
  width: 24px;
  height: 23px;
 }
+
+#easel ol li a[href="http://www.delaware.gov/"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 63px;
+ left: 127px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.dc.gov/"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 63px;
+ left: 204px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.myflorida.com/"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 63px;
+ left: 281px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.georgia.gov/00/home/0"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 63px;
+ left: 358px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://pahoehoe.ehawaii.gov/portal/"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 113px;
+ left: 13px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.idaho.gov/"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 113px;
+ left: 90px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.illinois.gov/"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 113px;
+ left: 167px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.in.gov"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 113px;
+ left: 244px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.iowa.gov"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 113px;
+ left: 321px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.kansas.gov"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 113px;
+ left: 398px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://kentucky.gov/"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 163px;
+ left: 50px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.louisiana.gov/wps/portal/"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 163px;
+ left: 127px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.maine.gov/"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 163px;
+ left: 204px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.maryland.gov"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 163px;
+ left: 281px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.mass.gov"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 163px;
+ left: 358px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.michigan.gov/"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 213px;
+ left: 13px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.state.mn.us/"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 213px;
+ left: 90px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.mississippi.gov/"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 213px;
+ left: 167px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.missouri.gov/"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 213px;
+ left: 244px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.discoveringmontana.com/default.asp"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 213px;
+ left: 321px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
+
+#easel ol li a[href="http://www.nebraska.gov"] i {
+ background-image: url("white_star.png");
+ display: block;
+ position: absolute;
+ top: 213px;
+ left: 398px;
+ z-index: 50;
+ width: 24px;
+ height: 23px;
+}
