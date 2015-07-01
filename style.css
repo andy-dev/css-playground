@@ -1,4 +1,17 @@
-.divStyle {
+#evtBubbleDiv{
+  float:left;
+  clear:left;
+  display: inline;
+}
+
+#noBubbleDiv{
+  float:left;
+  display: inline;
+  margin-left: 10px;
+}
+
+.evtBubbleStyleDivs {
+  clear:left;
   margin-right: 10px;
   display: table-cell;
   border: solid 1px black;
@@ -7,23 +20,26 @@
 
 }
 
-.styleClass{
+.noBubbleStyleDivs{
   display: table-cell;
   border: solid 1px black;
   text-align: center;
   padding: 20px;
 }
 
-#one {
-  float:left;
-  clear:left;
-  margin-top: 10px;
-}
-
-#render_one{
+#handleBarsRenderDiv{
   float:left;
   clear:left;
   margin-top: 10px;
   border: solid 1px black;
 }
+
+#selectorPlayDiv{
+  float:left;
+  clear:left;
+  margin-top: 10px;
+  border: solid 1px red;
+}
+
+
 
