@@ -38,8 +38,12 @@
   float:left;
   clear:left;
   margin-top: 10px;
-  border: solid 1px red;
+  border: solid 1px black;
 }
+
+ol  li {color: green}
+ol > li {color: blue} /*matches lis in ols but not nested uls*/
+
 
 
 
