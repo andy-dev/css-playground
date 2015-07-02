@@ -2,6 +2,7 @@
   float:left;
   clear:left;
   display: inline;
+  margin-bottom: 10px;
 }
 
 #noBubbleDiv{
@@ -17,7 +18,6 @@
   border: solid 1px black;
   text-align: center;
   padding: 20px;
-
 }
 
 .noBubbleStyleDivs{
@@ -28,9 +28,8 @@
 }
 
 #handleBarsRenderDiv{
-  float:left;
   clear:left;
-  margin-top: 10px;
+  text-align: center;
   border: solid 1px black;
 }
 
@@ -41,9 +40,12 @@
   border: solid 1px black;
 }
 
-ol  li {color: green}
-ol > li {color: blue} /*matches lis in ols but not nested uls*/
+ol  li {color: green;}
+ol > li {color: blue;} /*matches lis in ols but not nested uls*/
+li.myClass {color: red;}
+li.myClass + li {color: black;}
 
-
+a[href^=http] {text-decoration: overline;} /*starts with*/
+a[href$=pdf] {font-weight: bold ;} /*ends with*/
 
 
