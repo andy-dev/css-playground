@@ -49,3 +49,4 @@ a[href^=http] {text-decoration: overline;} /*starts with*/
 a[href$=pdf] {font-weight: bold ;} /*ends with*/
 
 
+input[type=checkbox]:checked + label {color: blue;}
