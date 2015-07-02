@@ -14,7 +14,7 @@ $(function(){
 
 var eventProp = function (){
 
-  var divElements = document.getElementsByClassName('noBubbleStyleDivs')
+  var divElements = document.getElementsByClassName('no-bubble-style-divs')
   console.log(divElements)
 
   for(var i=0; i < divElements.length; i++){
@@ -68,7 +68,7 @@ var handleTest = function (){
 
   var el_html = template(context);
 
-  $("#handleBarsRenderDiv").html(el_html);
+  $("#handle-bars-render-div").html(el_html);
 
 }
 
