@@ -41,9 +41,9 @@
 }
 
 ol  li {color: green;}
-ol > li {color: blue;} /*matches lis in ols but not nested uls*/
+ol > li {color: blue;} /*matches lis in ols but not nested uls..direct child of li*/
 li.myClass {color: red;}
-li.myClass + li {color: black;}
+li.myClass + li {color: black;} /*direct sibiling*/
 
 a[href^=http] {text-decoration: overline;} /*starts with*/
 a[href$=pdf] {font-weight: bold ;} /*ends with*/
