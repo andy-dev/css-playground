@@ -1,18 +1,18 @@
-#evt-bubble-div{
+/*-----------------------*/
+/*     Event Bubbling    */
+/*-----------------------*/
+
+#evt-bubble-div {
   float:left;
-  clear:left;
-  display: inline;
   margin-bottom: 10px;
 }
 
-#no-bubble-div{
+#no-bubble-div {
   float:left;
-  display: inline;
   margin-left: 10px;
 }
 
 .evt-bubble-style-divs {
-  clear:left;
   margin-right: 10px;
   display: table-cell;
   border: solid 1px black;
@@ -20,22 +20,33 @@
   padding: 20px;
 }
 
-.no-bubble-style-divs{
+.no-bubble-style-divs {
   display: table-cell;
   border: solid 1px black;
   text-align: center;
   padding: 20px;
 }
 
-#handle-bars-render-div{
-  clear:left;
+/*-----------------------*/
+/*      HandleBars       */
+/*-----------------------*/
+
+#handle-bars-render-div {
+  float:left;
+  width: 250px;
+  margin-left: 10px;
   text-align: center;
   border: solid 1px black;
 }
 
-#selector-play-div{
-  float:left;
+/*-----------------------*/
+/*     Selectors         */
+/*-----------------------*/
+
+#selector-play-div {
   clear:left;
+  float: left;
+  padding: 10px;
   margin-top: 10px;
   border: solid 1px black;
 }
@@ -49,9 +60,13 @@ a[href^=http] {text-decoration: overline;} /*starts with*/
 a[href$=pdf] {font-weight: bold ;} /*ends with*/
 
 
+/*-------------------------------------*/
+/*     UI Form Related Pseudo Classes  */
+/*-------------------------------------*/
+
 input[type=checkbox]:checked + label {color: blue;}
 
-.input-pseudo-div{
+.input-pseudo-div {
   float:left;
   margin-top: 10px;
   margin-left: 10px;
@@ -62,7 +77,38 @@ input[type=checkbox]:checked + label {color: blue;}
 input:valid {background: green;}
 input:invalid {background: red;}
 
-#test3{
+#test3 {
   font-size: 2em;
   width: 4em;
+}
+
+/*-----------------------*/
+/*Structural Selectors*/
+/*-----------------------*/
+
+.structural-selector-div {
+  margin-left: 10px;
+  width: 200px;
+  float: left;
+  margin-top: 10px;
+}
+
+table td {
+  border:solid 1px black;
+  width:200px;
+}
+
+tr:first-child,
+tr:last-child {
+  font-weight: bold;
+}
+tr:nth-child(even){
+  background-color: green;
+}
+tr:nth-of-type(2n+3){
+  font-style: italic;
+}
+tr:nth-child(odd){
+  background-color: blue;
+  color: orange;
 }
