@@ -7,9 +7,9 @@
 
 <div id="evt-bubble-div">
   <p>Event Bubbling</p>
-  <div id = "div1" class = "evt-bubble-style-divs"> DIV 1
-    <div id = "div2" class = "evt-bubble-style-divs"> DIV 2
-      <div id = "div3" class = "evt-bubble-style-divs"> DIV 3
+  <div onclick = "alert('we got this far')" id = "div1" class = "evt-bubble-style-divs"> DIV 1
+    <div onclick = "alert('Oh no stop')" id = "div2" class = "evt-bubble-style-divs"> DIV 2
+      <div onclick = "alert('start bubble')" id = "div3" class = "evt-bubble-style-divs"> DIV 3
       </div>
     </div>
   </div>
