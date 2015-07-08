@@ -119,8 +119,13 @@ tr:nth-child(odd){
 /*Target*/
 /*-----------------------*/
 
+.block {
+  border: solid 1px black;
+  float:left;
+  clear:left;
+}
 
-a {
+.block a {
   text-decoration: none;
   color: black;
   float: left;
@@ -131,14 +136,8 @@ a {
   top:2px;
 }
 
-section {
+. block section {
   display: inline;
-}
-
-.block {
-  border: solid 1px black;
-  float:left;
-  clear:left;
 }
 
 section > div {
