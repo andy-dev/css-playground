@@ -120,29 +120,40 @@ tr:nth-child(odd){
 /*-----------------------*/
 
 .block {
-  border: solid 1px black;
-  float:left;
-  clear:left;
-}
+  width: 300px;
+  float: left;
+  clear: left;
+  min-height: 250px;
+  position: relative;
+  margin: 20px auto;
+  }
+
+section { display: inline; }
 
 .block a {
   text-decoration: none;
   color: black;
   float: left;
   padding: 5px 10px;
-  border: 1px solid red;
-  border-bottom: #fff;
+  border: 1px solid #ccc;
+  border-bottom-color: #fff;
+  margin-right: 10px;
   position: relative;
-  top:2px;
+  top: 2px
 }
 
-. block section {
-  display: inline;
+div:not(:target) > .block a {
+  background-color: #ccc;
+}
+
+div:target > .block a {
+  background-color: white;
+  z-index: 2;
 }
 
 section > div {
   background: white;
-  z-index: 2;
+  z-index: -2;
   left: 0;
   top: 30px;
   bottom: 0;
@@ -151,14 +162,13 @@ section > div {
   border: 1px solid #ccc;
 }
 
-section:not(:target) > a {
+section:not(:target) > div { position: absolute }
+section:target > div { position: absolute; z-index: -1; }
+
+section:not(:target) >  a {
   background-color: #ccc;
 }
-
-section:target > a {
+section:target >  a {
   background-color: white;
   border-bottom-color: #fff;
 }
-
-section:not(:target) > div {z-index:-2;}
-section:target > div {z-index: -1;}
