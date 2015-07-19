@@ -172,3 +172,27 @@ section:target >  a {
   background-color: white;
   border-bottom-color: #fff;
 }
+
+/*-----------------------*/
+/*First Letter*/
+/*-----------------------*/
+
+.first-letter {
+  width: 300px;
+  float: left;
+  min-height: 250px;
+  position: relative;
+  margin-left: 20px;
+  border: 1px solid grey;
+  margin-top: 20px;
+}
+
+.first-letter p:first-of-type:first-letter {
+  float: left;
+  font-size: 3em;
+  line-height: 1;
+  color: #880000;
+  padding: 0 4px 2px 0;
+  font-weight: bold;
+}
+
