@@ -12,7 +12,10 @@ my css and JS ninja practice/playground
 # What you can find in style.css
 
 1. some uses of float and clear
-2. text-align, margin-top, border etc...
+2. using target wo the use of js(this is cool)
+3. use of selectors
+4. ui for diff types of inputs
+5. text-align, margin-top, border etc...
 
 # What you can find in index.html
 
