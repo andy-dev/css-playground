@@ -101,11 +101,27 @@ var myModule = function () {
 //---------------------------
 //  Simple unit test
 //---------------------------
-var Bob = require('./bob.js');
-describe("Bob", function() {
-  var bob = new Bob();
-  it("stating something", function() {
-    var result = bob.hey('Tom-ay-to, tom-aaaah-to.');
-    expect(result).toEqual('Whatever.');
-  });
-});
+// var Bob = require('./bob.js');
+// describe("Bob", function() {
+//   var bob = new Bob();
+//   it("stating something", function() {
+//     var result = bob.hey('Tom-ay-to, tom-aaaah-to.');
+//     expect(result).toEqual('Whatever.');
+//   });
+// });
+
+//---------------------------
+//  Nested Function
+//---------------------------
+
+function showEverywhere(text){
+
+  function decorate(a){
+    return "88888 " + a + " 88888";
+  };
+
+  var text = decorate(text);
+  console.log(text);
+};
+
+showEverywhere("I love JS")
