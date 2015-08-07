@@ -125,3 +125,19 @@ function showEverywhere(text){
 };
 
 showEverywhere("I love JS")
+
+//---------------------------
+//  Add methods to objects
+//---------------------------
+
+var player = {
+  name: "ikigai",
+  weapons: ["patience", "knowledge"],
+  addWeapon: function(newWeapon){
+    this.weapons.push(newWeapon);
+  }
+}
+
+player.addWeapon("samurai sword")
+
+console.log(player.weapons)
