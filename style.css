@@ -196,3 +196,19 @@ section:target >  a {
   font-weight: bold;
 }
 
+/*-----------------------*/
+/*Canvas*/
+/*-----------------------*/
+
+.myCanvas {
+  width: 400px;
+  float: left;
+  border: 1px solid grey;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+canvas {
+  border: 1px solid blue;
+}
