@@ -136,16 +136,29 @@ console.log(player.weapons)
 //  Canvas
 //---------------------------
 
+// initial position
 var x = 10;
 var y = 10;
+// rectangle dimension
 var w = 20;
 var h = 30;
-
+// speed of our rect
 var speed = 2;
+
 var canvas = document.getElementById("canvasOne")
 var ctx = canvas.getContext("2d");
 
 var update = function() {
+  if(x >= 170 ){
+    x = 170;
+    speed = -speed;
+  }
+
+  if(x <= 10 ) {
+    x = 10;
+    speed = -speed;
+  }
+
   x = x + speed;
 }
 
