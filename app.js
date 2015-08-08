@@ -144,27 +144,43 @@ var w = 20;
 var h = 30;
 // speed of our rect
 var speed = 2;
+var blueZone, orangeZone
 
 var canvas = document.getElementById("canvasOne")
 var ctx = canvas.getContext("2d");
 
 var update = function() {
-  if(x >= 170 ){
+  var crossedRightLimit = x >= 180;
+  var crossedLeftLimit = x <= 10;
+  if(crossedRightLimit){
     x = 170;
     speed = -speed;
   }
 
-  if(x <= 10 ) {
+  else if(crossedLeftLimit) {
     x = 10;
     speed = -speed;
   }
 
   x = x + speed;
+
+  blueZone = x > 0 && x < 80;
+  orangeZone = !blueZone && x < 200;
 }
 
 var draw = function(){
   ctx.clearRect(0,0, 200, 200)
-  ctx.fillStyle = "rgb(200, 0, 100)";
+
+  if(blueZone){
+    ctx.fillStyle = "#3333FF"
+  }
+  else if(orangeZone) {
+    ctx.fillStyle = "orange"
+  }
+  else {
+    ctx.fillStyle = "rgb(200,0,100)"
+  }
+
   ctx.fillRect(x,y,w,h)
 }
 
