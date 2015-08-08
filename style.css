@@ -201,7 +201,7 @@ section:target >  a {
 /*-----------------------*/
 
 .myCanvas {
-  width: 400px;
+  width: 205px;
   float: left;
   border: 1px solid grey;
   margin-left: 20px;
@@ -211,4 +211,5 @@ section:target >  a {
 
 canvas {
   border: 1px solid blue;
+  position: center;
 }
