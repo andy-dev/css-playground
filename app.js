@@ -136,11 +136,33 @@ console.log(player.weapons)
 //  Canvas
 //---------------------------
 
-var canvas = document.getElementById("canvasOne");
+var x = 10;
+var y = 10;
+var w = 20;
+var h = 30;
+
+var speed = 2;
+var canvas = document.getElementById("canvasOne")
 var ctx = canvas.getContext("2d");
 
-ctx.fillStyle = "rgb(200, 0, 200)";
-ctx.fillRect(50, 40, 100, 30);
+var update = function() {
+  x = x + speed;
+}
+
+var draw = function(){
+  ctx.clearRect(0,0, 200, 200)
+  ctx.fillStyle = "rgb(200, 0, 100)";
+  ctx.fillRect(x,y,w,h)
+}
+
+var step = function (){
+  update();
+  draw();
+  window.requestAnimationFrame(step);
+}
+
+step();
+
 
 
 //---------------------------
