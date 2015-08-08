@@ -144,6 +144,7 @@ var w = 20;
 var h = 30;
 // speed of our rect
 var speed = 2;
+var speedY = 0;
 var blueZone, orangeZone
 
 var canvas = document.getElementById("canvasOne")
@@ -152,6 +153,9 @@ var ctx = canvas.getContext("2d");
 var update = function() {
   var crossedRightLimit = x >= 180;
   var crossedLeftLimit = x <= 10;
+  var crossesdBottomLimit = y >= 180;
+  var crossesdTopLimit = y <= 10;
+
   if(crossedRightLimit){
     x = 170;
     speed = -speed;
@@ -165,7 +169,7 @@ var update = function() {
   x = x + speed;
 
   blueZone = x > 0 && x < 80;
-  orangeZone = !blueZone && x < 200;
+  orangeZone = !blueZone && x < 160;
 }
 
 var draw = function(){
