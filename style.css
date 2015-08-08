@@ -119,13 +119,21 @@ tr:nth-child(odd){
 /*Target*/
 /*-----------------------*/
 
+.taber {
+  width:  330px;
+  float: left;
+  clear: left;
+  border: 1px solid blue;
+  padding: 15px;
+}
+
 .block {
   width: 300px;
   float: left;
   clear: left;
   min-height: 250px;
   position: relative;
-  margin: 20px auto;
+  margin: auto;
   }
 
 section { display: inline; }
