@@ -1,36 +1,60 @@
-var GAME_WIDTH = 640;
-    var GAME_HEIGHT = 360;
+var GAME_HEIGHT = 360;
+var GAME_WIDTH = 100%;
 
-    //enemies
-    var enemies = [
-      {
-        x: 100, //x coordinate
-        y: 100, //y coordinate
-        speedY: 1, //speed in Y
-        speedX: 2,
-        w: 40, //width
-        h: 40 //heght
-      },
-      {
-        x: 260,
-        y: 100,
-        speedY: 2,
-        speedX: 1,
-        w: 40,
-        h: 40
-      },
-      {
-        x: 380,
-        y: 100,
-        speedY: 2,
-        speedX: 4,
-        w: 40,
-        h: 40
-      }
-    ];
+var enemeies [
+  {
+    x: 100,
+    y: 100,
+    w: 40,
+    h: 40,
+    speedX = 2,
+    speedY = 2,
+  },
+   {
+    x: 100,
+    y: 100,
+    w: 40,
+    h: 40,
+    speedX = 2,
+    speedY = 2,
+  },
+   {
+    x: 100,
+    y: 100,
+    w: 40,
+    h: 40,
+    speedX = 2,
+    speedY = 2,
+  },
+];
 
-    var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
+var canvas = document.getElementById("myCanvas")
+var context = canvas.getContext("2d")
+
+var update = function () {
+
+  enemies.forEach(function(element, index){
+    element.y += element.speedY
+    element.x += element.speedX
+  })
+
+}
+
+var draw = function(){
+
+  ctx.clearRect(0,0,GAME_HEIGHT,GAME_WIDTH)
+  ctx.fillStyle
+
+}
+
+var step = function(){
+
+}
+
+step()
+
+
+
 
     var update = function() {
 

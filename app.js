@@ -179,8 +179,8 @@ var update = function() {
   y = y + speedY;
   x = x + speed;
 
-  blueZone = x > 0 && x < 80;
-  orangeZone = !blueZone && x < 160;
+  blueZone = x > 0 && x < 65;
+  orangeZone = !blueZone && x < 130;
 }
 
 var draw = function(){
