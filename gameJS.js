@@ -2,6 +2,7 @@ window.addEventListener('load', function(){
 
   var GAME_WIDTH = 640;
   var GAME_HEIGHT = 360;
+  var gameLive = true;
 
   var enemies = [
     {
@@ -61,6 +62,18 @@ window.addEventListener('load', function(){
     }
 
     enemies.forEach(function(element, index){
+
+      if(checkCollision(player, element)){
+
+        gameLive = false;
+
+        alert('Game Over');
+
+        window.location = ""; // this reloads page
+
+      }
+
+
       element.y += element.speedY;
       element.x += element.speedX;
 
@@ -102,8 +115,16 @@ window.addEventListener('load', function(){
     update();
     draw();
 
-    window.requestAnimationFrame(step);
+    if(gameLive){
+      window.requestAnimationFrame(step);
+    }
   };
 
+  var checkCollision = function(rect1,rect2){
+    var closeOnWidth = Math.abs(rect1.x - rect2.x) <= Math.max(rect1.w, rect2.w);
+    var closeOnHeight = Math.abs(rect1.y - rect2.y) <= Math.max(rect1.h, rect2.h);
+
+    return closeOnHeight && closeOnWidth
+  }
   step();
 });
