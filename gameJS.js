@@ -30,13 +30,33 @@ window.addEventListener('load', function(){
     }
   ];
 
+  var player = {
+    x:10,
+    y:160,
+    speedX: 3,
+    w: 20,
+    h:20,
+    isMoving: false
+  }
+
+  var movePlayer = function(){
+    player.isMoving = true;
+  }
+
+  var stopPlayer = function(){
+    player.isMoving = false;
+  }
+
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext("2d");
+  canvas.addEventListener("mousedown", movePlayer);
+  canvas.addEventListener("mouseup", stopPlayer);
 
   var update = function() {
 
-    var i = 0;
-    var n = enemies.length;
+    if(player.isMoving){
+      player.x += player.speedX;
+    }
 
     enemies.forEach(function(element, index){
       element.y += element.speedY;
@@ -64,8 +84,12 @@ window.addEventListener('load', function(){
 
   var draw = function() {
     ctx.clearRect(0,0,GAME_WIDTH,GAME_HEIGHT);
-    ctx.fillStyle = "orange";
 
+
+    ctx.fillStyle = "blue"
+    ctx.fillRect(player.x,player.y,player.w,player.h)
+
+    ctx.fillStyle = "orange";
     enemies.forEach(function(element, index){
       ctx.fillRect(element.x, element.y, element.w, element.h);
     });
