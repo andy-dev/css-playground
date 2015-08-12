@@ -51,6 +51,8 @@ window.addEventListener('load', function(){
   var ctx = canvas.getContext("2d");
   canvas.addEventListener("mousedown", movePlayer);
   canvas.addEventListener("mouseup", stopPlayer);
+  canvas.addEventListener("touchstart", movePlayer);
+  canvas.addEventListener("touchend", stopPlayer)
 
   var update = function() {
 
