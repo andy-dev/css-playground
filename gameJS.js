@@ -40,6 +40,13 @@ window.addEventListener('load', function(){
     isMoving: false
   }
 
+  var goal = {
+    x: 580,
+    y: 160,
+    w: 36,
+    h: 36
+  }
+
   var movePlayer = function(){
     player.isMoving = true;
   }
@@ -57,6 +64,14 @@ window.addEventListener('load', function(){
 
   var update = function() {
 
+    if(checkCollision(player, goal)){
+        gameLive = false;
+
+        alert('You\'ve Won');
+
+        window.location = "";
+    }
+
     if(player.isMoving){
       player.x += player.speedX;
     }
@@ -72,7 +87,6 @@ window.addEventListener('load', function(){
         window.location = ""; // this reloads page
 
       }
-
 
       element.y += element.speedY;
       element.x += element.speedX;
@@ -108,6 +122,9 @@ window.addEventListener('load', function(){
     enemies.forEach(function(element, index){
       ctx.fillRect(element.x, element.y, element.w, element.h);
     });
+
+    ctx.fillStyle = "rgb(128,128,0)";
+    ctx.fillRect(goal.x, goal.y, goal.w, goal.h);
   };
 
   var step = function() {
@@ -126,5 +143,6 @@ window.addEventListener('load', function(){
 
     return closeOnHeight && closeOnWidth
   }
+
   step();
 });
