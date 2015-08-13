@@ -40,6 +40,8 @@ window.addEventListener('load', function(){
     isMoving: false
   }
 
+  var sprites = {};
+
   var goal = {
     x: 580,
     y: 160,
@@ -61,6 +63,20 @@ window.addEventListener('load', function(){
   canvas.addEventListener("mouseup", stopPlayer);
   canvas.addEventListener("touchstart", movePlayer);
   canvas.addEventListener("touchend", stopPlayer)
+
+   var load = function() {
+        sprites.player = new Image();
+        sprites.player.src = 'images/hero.png';
+
+        sprites.background = new Image();
+        sprites.background.src = 'images/floor.png';
+
+        sprites.enemy = new Image();
+        sprites.enemy.src = 'images/enemy.png';
+
+        sprites.goal = new Image();
+        sprites.goal.src = 'images/chest.png';
+      };
 
   var update = function() {
 
@@ -114,17 +130,19 @@ window.addEventListener('load', function(){
   var draw = function() {
     ctx.clearRect(0,0,GAME_WIDTH,GAME_HEIGHT);
 
-
-    ctx.fillStyle = "blue"
-    ctx.fillRect(player.x,player.y,player.w,player.h)
+    ctx.drawImage(sprites.player, player.x, player.y);
+    // ctx.fillStyle = "blue"
+    // ctx.fillRect(player.x,player.y,player.w,player.h)
 
     ctx.fillStyle = "orange";
     enemies.forEach(function(element, index){
       ctx.fillRect(element.x, element.y, element.w, element.h);
     });
 
-    ctx.fillStyle = "rgb(128,128,0)";
-    ctx.fillRect(goal.x, goal.y, goal.w, goal.h);
+
+    // ctx.fillStyle = "rgb(128,128,0)";
+    // ctx.fillRect(goal.x, goal.y, goal.w, goal.h);
+    ctx.drawImage(sprites.goal, goal.x, goal.y);
   };
 
   var step = function() {
@@ -143,6 +161,6 @@ window.addEventListener('load', function(){
 
     return closeOnHeight && closeOnWidth
   }
-
+  load();
   step();
 });
