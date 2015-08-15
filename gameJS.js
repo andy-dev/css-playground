@@ -3,6 +3,7 @@ window.addEventListener('load', function(){
   var GAME_WIDTH = 640;
   var GAME_HEIGHT = 360;
   var gameLive = true;
+  var level = 1;
 
   var enemies = [
     {
@@ -81,11 +82,18 @@ window.addEventListener('load', function(){
   var update = function() {
 
     if(checkCollision(player, goal)){
-        gameLive = false;
 
-        alert('You\'ve Won');
 
-        window.location = "";
+
+        level++;
+        player.x = 10;
+        player.y = 160;
+
+        enemies.forEach(function(element,index){
+          element.speedY += element.speedY/Math.abs(element.speedY);
+        });
+
+
     }
 
     if(player.isMoving){
