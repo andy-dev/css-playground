@@ -83,8 +83,6 @@ window.addEventListener('load', function(){
 
     if(checkCollision(player, goal)){
 
-
-
         level++;
         player.x = 10;
         player.y = 160;
@@ -92,8 +90,6 @@ window.addEventListener('load', function(){
         enemies.forEach(function(element,index){
           element.speedY += element.speedY/Math.abs(element.speedY);
         });
-
-
     }
 
     if(player.isMoving){
@@ -124,8 +120,8 @@ window.addEventListener('load', function(){
         element.speedY *= -1;
       }
 
-      if(element.x <= 10) {
-        element.x = 10;
+      if(element.x <= 100) {
+        element.x = 100;
         element.speedX *= -1;
       }
       else if(element.x >= GAME_WIDTH - 50) {
