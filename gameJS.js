@@ -86,10 +86,12 @@ window.addEventListener('load', function(){
         level++;
         player.x = 10;
         player.y = 160;
+        stopPlayer();
 
         enemies.forEach(function(element,index){
           element.speedY += element.speedY/Math.abs(element.speedY);
         });
+        alert("level " + level);
     }
 
     if(player.isMoving){
